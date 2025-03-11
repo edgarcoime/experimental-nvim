@@ -126,6 +126,6 @@ function M.get_titlestr()
 end
 
 M.plugin_dir = vim.fn.stdpath("data") .. "/lazy"
-M.lazypath = M.plugin_dir .. "/lua/lazy.lua"
+M.lazypath = M.plugin_dir .. "/lazy.nvim"
 
 return M

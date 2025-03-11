@@ -26,8 +26,13 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
+-- check if firenvim is active
+local firenvim_not_active = function()
+  return not vim.g.started_by_firenvim
+end
+
 local plugin_specs = {
-  -- PLUGINS HERE
+  "nvim-lua/plenary.nvim",
 }
 
 require("lazy").setup({
