@@ -28,7 +28,7 @@ return {
       picker = { enabled = true },
       notifier = { 
         enabled = true,
-        timeout = 3000,
+        timeout = 2000,
       },
       toggle = { enabled = true },
       quickfile = { enabled = true },
