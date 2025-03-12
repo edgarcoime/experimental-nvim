@@ -76,7 +76,7 @@ return {
       { "<leader>gf", function() Snacks.picker.git_log_file() end, desc = "[G]it Log [F]ile" },
       { "<leader>gg", function() Snacks.lazygit() end, desc = "Lazygit" },
       -- QOL
-      { "<leader>ec", function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config File" },
+      { "<leader>e.", function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config File" },
       { "<leader>en",  function() Snacks.notifier.show_history() end, desc = "Notification History" },
       { "<leader>ed", function() Snacks.notifier.hide() end, desc = "Dismiss All Notifications" },
       { "<leader>eC", function() Snacks.picker.colorschemes() end, desc = "Search colorschemes" },
