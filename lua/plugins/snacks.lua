@@ -19,7 +19,11 @@ return {
           { section = "startup" },
         },
       },
-      explorer = { enabled = true },
+      explorer = { 
+        layout = {
+          cycle = false,
+        }
+      },
       indent = { enabled = true },
       picker = { enabled = true },
       notifier = { 
@@ -33,6 +37,8 @@ return {
       words = { enabled = true },
     },
     keys = {
+      { "<leader>ex", function() Snacks.explorer() end, desc = "Snacks Explorer" },
+
       -- Searching
       { "<leader>sr", function() Snacks.picker.recent() end, desc = "[S]earch [R]ecent" },
       { "<leader>sf", function() Snacks.picker.files() end, desc = "[S]earch [F]ile" },
