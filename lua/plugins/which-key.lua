@@ -1,4 +1,4 @@
-return {
+local config = {
   {
     "echasnovski/mini.icons",
     version = "*",  -- Always get the latest version
@@ -39,3 +39,5 @@ return {
     end,
   }
 }
+return config
+-- return {}
