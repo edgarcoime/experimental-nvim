@@ -95,9 +95,18 @@ vim.opt.smartcase = true -- Override ignorecase if search pattern contains upper
 vim.opt.fileencoding = "utf-8"
 vim.opt.fileencodings = { "ucs-bom", "utf-8", "cp936", "gb18030", "big5", "euc-jp", "euc-kr", "latin1" }
 
+-- line wrapping
 -- Line break settings
-vim.opt.linebreak = true
 vim.opt.showbreak = "↪" -- Character to show before wrapped lines
+vim.opt.wrap = true
+vim.opt.breakindent = true
+vim.opt.showbreak = string.rep(" ", 3) -- Make it so that long lines wrap smartly
+vim.opt.linebreak = true
+
+-- Remap for dealing with word wrap
+vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
+vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
+
 
 -- Command-line completion settings
 vim.opt.wildmode = { "list", "longest" }

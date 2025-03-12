@@ -61,7 +61,7 @@ map("n", "<leader>ev", "<cmd>tabnew $MYVIMRC <bar> tcd %:h<cr>", {
   desc = "open init.lua",
 })
 
-map("n", "<leader>sv", function()
+map("n", "<leader>er", function()
   vim.cmd([[
       update $MYVIMRC
       source $MYVIMRC
