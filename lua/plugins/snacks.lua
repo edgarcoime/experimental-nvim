@@ -32,7 +32,7 @@ return {
       },
       toggle = { enabled = true },
       quickfile = { enabled = true },
-      -- ?scope = { enabled = true },
+      -- scope = { enabled = true },
       -- ?statuscolumn = { enabled = true },
       words = { enabled = true },
     },
@@ -77,7 +77,7 @@ return {
       { "<leader>gg", function() Snacks.lazygit() end, desc = "Lazygit" },
       -- QOL
       { "<leader>e.", function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config File" },
-      { "<leader>en",  function() Snacks.notifier.show_history() end, desc = "Notification History" },
+      { "<leader>en", function() Snacks.notifier.show_history() end, desc = "Notification History" },
       { "<leader>ed", function() Snacks.notifier.hide() end, desc = "Dismiss All Notifications" },
       { "<leader>eC", function() Snacks.picker.colorschemes() end, desc = "Search colorschemes" },
     }

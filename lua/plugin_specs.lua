@@ -31,6 +31,7 @@ local firenvim_not_active = function()
   return not vim.g.started_by_firenvim
 end
 
+-- GLOBAL PLUGINS
 local plugin_specs = {
   "nvim-lua/plenary.nvim",
 }
@@ -39,6 +40,7 @@ require("lazy").setup({
   spec = {
     plugin_specs,
     { import = "plugins" },
+    { import = "plugins.lsp" },
   },
   ui = {
     border = "rounded",
