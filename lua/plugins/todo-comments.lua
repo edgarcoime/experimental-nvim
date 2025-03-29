@@ -7,6 +7,6 @@ return {
     -- refer to the configuration section below
   },
   keys = {
-    { "<leader>lt", "<cmd>Trouble todos<cr>", desc = "[L]ist [T]odos loclist"},
+    { "<leader>lt", "<cmd>Trouble todo<cr>", desc = "[L]ist [T]odos trouble"},
   }
 }
