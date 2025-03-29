@@ -2,8 +2,8 @@ vim.loader.enable()
 
 local utils = require("utils")
 
-local expected_version = "0.10.2"
--- utils.is_compatible_version(expected_version)
+local expected_version = "0.11.0"
+utils.is_compatible_version(expected_version)
 
 local config_dir = vim.fn.stdpath("config")
 ---@cast config_dir string
@@ -14,6 +14,12 @@ require("globals")
 
 -- load core settings
 require("core")
+
+-- NOTE: 
+vim.lsp.enable({
+  -- lua
+  "luals",
+})
 
 -- load Lazy and plugins
 require("plugin_specs")
