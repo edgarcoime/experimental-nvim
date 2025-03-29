@@ -13,7 +13,7 @@ return {
       -- enable mason and configure icons
       mason.setup({
         ui = {
-          border = "rounded",
+          border = vim.g.border,
           icons = {
             package_installed = "✓",
             package_pending = "➜",

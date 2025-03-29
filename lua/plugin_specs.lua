@@ -43,7 +43,7 @@ require("lazy").setup({
     { import = "plugins.lsp" },
   },
   ui = {
-    border = "rounded",
+    border = vim.g.border,
     size = {
       width = 0.85,
       height = 0.85,

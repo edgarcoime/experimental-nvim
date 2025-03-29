@@ -15,11 +15,11 @@ require("globals")
 -- load core settings
 require("core")
 
--- NOTE: 
-vim.lsp.enable({
-  -- lua
-  "luals",
-})
+-- NOTE: Not fully useable yet but stable in 0.11
+-- vim.lsp.enable({
+--   -- lua
+--   "luals",
+-- })
 
 -- load Lazy and plugins
 require("plugin_specs")

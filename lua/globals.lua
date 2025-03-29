@@ -70,4 +70,4 @@ vim.g.loaded_matchparen = 1
 vim.g.loaded_sql_completion = 1
 
 -- GLOBALS FOR CONFIG
-vim.g.UIBorder = true
+vim.g.border = "rounded"
