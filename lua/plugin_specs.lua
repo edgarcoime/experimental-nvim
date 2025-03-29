@@ -44,6 +44,10 @@ require("lazy").setup({
   },
   ui = {
     border = "rounded",
+    size = {
+      width = 0.85,
+      height = 0.85,
+    },
     title = "Plugin Manager",
     title_pos = "center",
   },
